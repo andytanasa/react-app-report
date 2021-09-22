@@ -7,6 +7,12 @@ export const StyledMainCard = styled.div`
   margin: 50px auto 20px;
   color: white;
   background-color: ${({ theme }) => theme.neutral.darkBlue};
+
+  @media (min-width: ${({ theme }) => theme.desktop}) {
+    height: 100%;
+    margin: 0 auto;
+    margin-right: 10px;
+  }
 `;
 export const HeaderCard = styled.div`
   background-color: ${({ theme }) => theme.primary.blue};
@@ -15,6 +21,7 @@ export const HeaderCard = styled.div`
   justify-content: center;
   border-radius: 20px;
   height: 65%;
+
   margin-bottom: 30px;
   & > div:first-child {
     padding-left: 20px;
@@ -36,17 +43,40 @@ export const HeaderCard = styled.div`
     border-radius: 50%;
     border: 5px solid white;
   }
+  @media (min-width: ${({ theme }) => theme.desktop}) {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    h4 {
+      font-size: 1.2em;
+    }
+    h2 {
+      font-size: 2.4em;
+    }
+  }
 `;
 export const HeaderContent = styled.ul`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  text-align: center;
 
   & > li {
     list-style: none;
+    width: 100%;
+    padding: 10px;
     a {
       text-decoration: none;
       color: #ccc;
+    }
+    &:hover {
+      background-color: ${({ theme }) => theme.neutral.desaturateBlue};
+      color: #f4f4f4;
     }
   }
   & > li:nth-child(2) {
@@ -54,4 +84,13 @@ export const HeaderContent = styled.ul`
       color: white;
     }
   }
+
+  @media (min-width: ${({ theme }) => theme.desktop}) {
+    flex-direction: column;
+    text-align: left;
+    & > li {
+      padding: 10px;
+      align-self: flex-start;
+    }
+  } ;
 `;

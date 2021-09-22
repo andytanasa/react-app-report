@@ -1,8 +1,8 @@
 export const theme = {
   primary: {
     blue: "hsl(246, 80%, 60%)",
-    softBlue: "hsl(195, 74%, 62%)",
     lightRed: "hsl(348, 100%, 68%)",
+    softBlue: "hsl(195, 74%, 62%)",
     limeGreen: "hsl(145, 58%, 55%)",
     violet: "hsl(264, 64%, 52%)",
     softOrange: "hsl(43, 84%, 65%)",
