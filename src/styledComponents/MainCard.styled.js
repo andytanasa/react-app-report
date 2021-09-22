@@ -26,6 +26,7 @@ export const HeaderCard = styled.div`
     h2 {
       font-weight: 400;
       letter-spacing: 1px;
+      color: #ccc;
     }
   }
   img {

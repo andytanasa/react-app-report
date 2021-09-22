@@ -6,6 +6,7 @@ export const GlobalStyles = createGlobalStyle`
 }
 body {
     background-color: ${({ theme }) => theme.neutral.veryDarkBlue};
+    font-family: 'Rubik', sans-serif;
     ul {
         padding: 0
     }
